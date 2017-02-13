@@ -5,3 +5,4 @@ while loop
  methods (incl get method)
  declaring/initializing variables
  
+ I incorporated attributes{Hunger,Thirst,Boredome} and developed methods{getHunger,getWater,getWalk, tick} 

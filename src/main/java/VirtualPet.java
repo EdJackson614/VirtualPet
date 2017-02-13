@@ -4,7 +4,7 @@ public class VirtualPet {
 
 	private static int hunger = 2;// Initialize hunger as an integer
 
-	public static int getHunger() {// Get Method
+	public static int getHunger() {// getHunger Constructor
 		return hunger;
 	}
 
@@ -28,7 +28,7 @@ public class VirtualPet {
 		thirst = thirst - 12;// decreased thirst
 	}
 
-	private static int boredom = 7;// Initialise boredom
+	private static int boredom = 7;// Initialize boredom
 
 	public static int getWalk() {// Get Method
 		return boredom;

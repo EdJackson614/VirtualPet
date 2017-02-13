@@ -10,10 +10,11 @@ public class VirtualPetApp
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Virtual Pet menu:");
-		System.out.println("What would you like to do?");
-		System.out.println("1. Feed my pet");
-		System.out.println("2. Give Spike some water");
-		System.out.println("3. Take Spike for a walk");
+		System.out.println("What does Spike need? Please monitor Spike's wellness levels closely;" //
+				+ "if any of Spike's levels reached 75, Spike perishes.");
+		System.out.println("1. Press ''1'', if you would you like to feed Spike.");
+		System.out.println("2. Press ''2'', if you would you like to give spike some water.");
+		System.out.println("3.Press ''3'', if you would like to take Spike for a walk.");
 		// User selects
 		do {// loop begins
 
@@ -52,11 +53,11 @@ public class VirtualPetApp
 				}
 				if (VirtualPet.getWalk() >= 15) {
 					System.out.println(
-							"Spike is feeling like he's on 'Lock Down'...show some love and take him to the park");
+							"Spike is feeling like he's imprisoned...love your pet,  take him to the park");
 				}
-		 if (VirtualPet.getHunger() >= 100 || VirtualPet.getWater() >= 100 || VirtualPet.getWalk() >= 100){// close
+		 if (VirtualPet.getHunger() >= 75 || VirtualPet.getWater() >= 75 || VirtualPet.getWalk() >= 75){// close
 			 alive = false;
-			 System.out.println("Spike is dead");
+			 System.out.println("Spike is dead !! Wow.");
 		}else if	(VirtualPet.getHunger() < 100 || VirtualPet.getWater() < 100 || VirtualPet.getWalk() < 100){
 		 	alive = true;}
 		} while (alive);		// close
